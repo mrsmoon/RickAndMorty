@@ -65,3 +65,9 @@ final class RMRequest {
         self.queryParameters = queryParameters
     }
 }
+
+extension RMRequest {
+    static let listCharactersRequests = RMRequest(endpoint: .character)
+    static let listEpisodesRequests = RMRequest(endpoint: .episode)
+    static let listLocationsRequests = RMRequest(endpoint: .location)
+}
