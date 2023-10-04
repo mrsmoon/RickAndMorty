@@ -1,5 +1,5 @@
 //
-//  CharacterListView.swift
+//  RMCharacterListView.swift
 //  RickAndMorty
 //
 //  Created by Seher Aytekin on 10/4/23.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class CharacterListView: UIView {
+final class RMCharacterListView: UIView {
     private let viewModel = RMCharacterListViewModel()
     
     private let spinner: UIActivityIndicatorView = {
@@ -20,7 +20,7 @@ final class CharacterListView: UIView {
     private let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 10, right: 10)
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         collectionView.isHidden = true
         collectionView.alpha = 0
@@ -37,6 +37,7 @@ final class CharacterListView: UIView {
         addSubviews(collectionView, spinner)
         addConstraints()
         spinner.startAnimating()
+        viewModel.delegate = self
         viewModel.fetchCharacters()
         configureCollectionView()
     }
@@ -64,14 +65,16 @@ final class CharacterListView: UIView {
     private func configureCollectionView() {
         collectionView.dataSource = viewModel
         collectionView.delegate = viewModel
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2, execute: {
-            self.spinner.stopAnimating()
-            self.collectionView.isHidden = false
-            
-            UIView.animate(withDuration: 0.4) {
-                self.collectionView.alpha = 1
-            }
-        })
+    }
+}
+
+extension RMCharacterListView: RMCharacterListViewModelDelegate {
+    func didLoadInitialCharacters() {
+        self.spinner.stopAnimating()
+        self.collectionView.isHidden = false
+        collectionView.reloadData()
+        UIView.animate(withDuration: 0.4) {
+            self.collectionView.alpha = 1
+        }
     }
 }
