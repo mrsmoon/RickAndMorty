@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol RMCharacterListViewDelegate: AnyObject {
+    func rmCharacterListView(_ charaterListView: RMCharacterListView, didSelectCharacter character: RMCharacter)
+}
+
 final class RMCharacterListView: UIView {
+    public weak var delegate: RMCharacterListViewDelegate?
+    
     private let viewModel = RMCharacterListViewModel()
     
     private let spinner: UIActivityIndicatorView = {
@@ -69,6 +75,10 @@ final class RMCharacterListView: UIView {
 }
 
 extension RMCharacterListView: RMCharacterListViewModelDelegate {
+    func didSelectCharacter(_ character: RMCharacter) {
+        delegate?.rmCharacterListView(self, didSelectCharacter: character)
+    }
+    
     func didLoadInitialCharacters() {
         self.spinner.stopAnimating()
         self.collectionView.isHidden = false

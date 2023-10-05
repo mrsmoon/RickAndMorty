@@ -32,6 +32,8 @@
 		9DD6E7172ACE0044009EC35D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E7162ACE0044009EC35D /* Extensions.swift */; };
 		9DD6E7192ACE0A2E009EC35D /* RMCharacterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E7182ACE0A2E009EC35D /* RMCharacterCollectionViewCell.swift */; };
 		9DD6E71B2ACE0F77009EC35D /* RMCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E71A2ACE0F77009EC35D /* RMCharacterCollectionViewCellViewModel.swift */; };
+		9DD6E71E2ACE2207009EC35D /* RMCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E71D2ACE2207009EC35D /* RMCharacterDetailViewController.swift */; };
+		9DD6E7202ACF44EC009EC35D /* RMCharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E71F2ACF44EC009EC35D /* RMCharacterDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		9DD6E7162ACE0044009EC35D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9DD6E7182ACE0A2E009EC35D /* RMCharacterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCell.swift; sourceTree = "<group>"; };
 		9DD6E71A2ACE0F77009EC35D /* RMCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		9DD6E71D2ACE2207009EC35D /* RMCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewController.swift; sourceTree = "<group>"; };
+		9DD6E71F2ACF44EC009EC35D /* RMCharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,8 @@
 				9DD6E6EF2ACBD241009EC35D /* Resources */,
 				9DD6E6EE2ACBD228009EC35D /* APIClient */,
 				9DD6E6ED2ACBD220009EC35D /* Managers */,
-				9DD6E6EC2ACBD217009EC35D /* ViewModels */,
 				9DD6E6EB2ACBD20D009EC35D /* Models */,
+				9DD6E6EC2ACBD217009EC35D /* ViewModels */,
 				9DD6E6EA2ACBD202009EC35D /* Controllers */,
 				9DD6E6E42ACBD08F009EC35D /* Info.plist */,
 			);
@@ -109,6 +113,7 @@
 		9DD6E6EA2ACBD202009EC35D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9DD6E71C2ACE21E9009EC35D /* Other */,
 				9DD6E6FE2ACBD622009EC35D /* Core */,
 			);
 			path = Controllers;
@@ -128,6 +133,7 @@
 			children = (
 				9DD6E7112ACDFBE0009EC35D /* RMCharacterListViewModel.swift */,
 				9DD6E71A2ACE0F77009EC35D /* RMCharacterCollectionViewCellViewModel.swift */,
+				9DD6E71F2ACF44EC009EC35D /* RMCharacterDetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -204,6 +210,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9DD6E71C2ACE21E9009EC35D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				9DD6E71D2ACE2207009EC35D /* RMCharacterDetailViewController.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -276,10 +290,12 @@
 			files = (
 				9DD6E7062ACD36B2009EC35D /* RMOrigin.swift in Sources */,
 				9DD6E7082ACD36F9009EC35D /* RMSingleLocation.swift in Sources */,
+				9DD6E7202ACF44EC009EC35D /* RMCharacterDetailViewModel.swift in Sources */,
 				9DD6E7152ACDFCED009EC35D /* RMCharacterListView.swift in Sources */,
 				9DD6E70A2ACD3776009EC35D /* RMCharacterStatus.swift in Sources */,
 				9DD6E70C2ACD386E009EC35D /* RMCharacterGender.swift in Sources */,
 				9DD6E6FB2ACBD5EA009EC35D /* RMLocationViewController.swift in Sources */,
+				9DD6E71E2ACE2207009EC35D /* RMCharacterDetailViewController.swift in Sources */,
 				9DD6E6F52ACBD2B2009EC35D /* RMEpisode.swift in Sources */,
 				9DD6E6DB2ACBD08D009EC35D /* RMTabBarController.swift in Sources */,
 				9DD6E6D72ACBD08D009EC35D /* AppDelegate.swift in Sources */,
