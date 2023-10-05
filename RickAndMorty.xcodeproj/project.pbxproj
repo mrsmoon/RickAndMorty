@@ -34,6 +34,7 @@
 		9DD6E71B2ACE0F77009EC35D /* RMCharacterCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E71A2ACE0F77009EC35D /* RMCharacterCollectionViewCellViewModel.swift */; };
 		9DD6E71E2ACE2207009EC35D /* RMCharacterDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E71D2ACE2207009EC35D /* RMCharacterDetailViewController.swift */; };
 		9DD6E7202ACF44EC009EC35D /* RMCharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E71F2ACF44EC009EC35D /* RMCharacterDetailViewModel.swift */; };
+		9DD6E7222ACF4E69009EC35D /* RMFooterLoadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E7212ACF4E69009EC35D /* RMFooterLoadingCollectionReusableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		9DD6E71A2ACE0F77009EC35D /* RMCharacterCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
 		9DD6E71D2ACE2207009EC35D /* RMCharacterDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewController.swift; sourceTree = "<group>"; };
 		9DD6E71F2ACF44EC009EC35D /* RMCharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewModel.swift; sourceTree = "<group>"; };
+		9DD6E7212ACF4E69009EC35D /* RMFooterLoadingCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMFooterLoadingCollectionReusableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			children = (
 				9DD6E7142ACDFCED009EC35D /* RMCharacterListView.swift */,
 				9DD6E7182ACE0A2E009EC35D /* RMCharacterCollectionViewCell.swift */,
+				9DD6E7212ACF4E69009EC35D /* RMFooterLoadingCollectionReusableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DD6E7222ACF4E69009EC35D /* RMFooterLoadingCollectionReusableView.swift in Sources */,
 				9DD6E7062ACD36B2009EC35D /* RMOrigin.swift in Sources */,
 				9DD6E7082ACD36F9009EC35D /* RMSingleLocation.swift in Sources */,
 				9DD6E7202ACF44EC009EC35D /* RMCharacterDetailViewModel.swift in Sources */,
