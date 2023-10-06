@@ -14,7 +14,7 @@ final class RMImageLoader {
     
     public init() {}
     
-    /// Get imagee content with URL
+    /// Get image content with URL
     /// - Parameters:
     ///   - url: Source URL
     ///   - completion: Callback

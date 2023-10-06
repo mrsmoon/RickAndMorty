@@ -15,7 +15,7 @@ final class RMRequest {
     }
     
     private let endpoint: RMEndpoint
-    private let pathComponent: Set<String>
+    private let pathComponent: [String]
     private let queryParameters: [URLQueryItem]
     
     /// Constructed url for the API request in string format
@@ -57,7 +57,7 @@ final class RMRequest {
     ///   - queryParameters: Collection of query parameters
     public init(
         endpoint: RMEndpoint,
-        pathComponent: Set<String> = [],
+        pathComponent: [String] = [],
         queryParameters: [URLQueryItem] = []
     ) {
         self.endpoint = endpoint
@@ -65,6 +65,9 @@ final class RMRequest {
         self.queryParameters = queryParameters
     }
     
+    
+    /// Attempt to create request
+    /// - Parameter url: URL
     convenience init?(url: URL) {
         let string = url.absoluteString
         if !string.contains(Constants.baseUrl) {
@@ -73,11 +76,16 @@ final class RMRequest {
         
         let trimmed = string.replacingOccurrences(of: Constants.baseUrl, with: "")
         if trimmed.contains("/") {
-            let components = trimmed.components(separatedBy: "/")
+            var components = trimmed.components(separatedBy: "/")
             if !components.isEmpty {
                 let endpointString = components[0]
+                components.removeFirst()
+                var pathComponents: [String]  = []
+                if components.count > 0 {
+                    pathComponents = components
+                }
                 if let rmEndpoint = RMEndpoint(rawValue: endpointString) {
-                    self.init(endpoint: rmEndpoint)
+                    self.init(endpoint: rmEndpoint, pathComponent: pathComponents)
                     return
                 }
             }

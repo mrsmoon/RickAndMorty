@@ -36,6 +36,7 @@
 		9DD6E7202ACF44EC009EC35D /* RMCharacterDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E71F2ACF44EC009EC35D /* RMCharacterDetailViewModel.swift */; };
 		9DD6E7222ACF4E69009EC35D /* RMFooterLoadingCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E7212ACF4E69009EC35D /* RMFooterLoadingCollectionReusableView.swift */; };
 		9DD6E7242ACF824E009EC35D /* RMImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E7232ACF824E009EC35D /* RMImageLoader.swift */; };
+		9DD6E7262ACFBB53009EC35D /* RMCharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD6E7252ACFBB53009EC35D /* RMCharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +71,7 @@
 		9DD6E71F2ACF44EC009EC35D /* RMCharacterDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailViewModel.swift; sourceTree = "<group>"; };
 		9DD6E7212ACF4E69009EC35D /* RMFooterLoadingCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMFooterLoadingCollectionReusableView.swift; sourceTree = "<group>"; };
 		9DD6E7232ACF824E009EC35D /* RMImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMImageLoader.swift; sourceTree = "<group>"; };
+		9DD6E7252ACFBB53009EC35D /* RMCharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RMCharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +214,7 @@
 				9DD6E7142ACDFCED009EC35D /* RMCharacterListView.swift */,
 				9DD6E7182ACE0A2E009EC35D /* RMCharacterCollectionViewCell.swift */,
 				9DD6E7212ACF4E69009EC35D /* RMFooterLoadingCollectionReusableView.swift */,
+				9DD6E7252ACFBB53009EC35D /* RMCharacterDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -302,6 +305,7 @@
 				9DD6E7242ACF824E009EC35D /* RMImageLoader.swift in Sources */,
 				9DD6E70A2ACD3776009EC35D /* RMCharacterStatus.swift in Sources */,
 				9DD6E70C2ACD386E009EC35D /* RMCharacterGender.swift in Sources */,
+				9DD6E7262ACFBB53009EC35D /* RMCharacterDetailView.swift in Sources */,
 				9DD6E6FB2ACBD5EA009EC35D /* RMLocationViewController.swift in Sources */,
 				9DD6E71E2ACE2207009EC35D /* RMCharacterDetailViewController.swift in Sources */,
 				9DD6E6F52ACBD2B2009EC35D /* RMEpisode.swift in Sources */,
